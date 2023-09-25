@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(90deg, #383838 0%, #000000 81.25%);
+}
+
+.container {
+  width: 375px;
+  height: 712px;
+  border-radius: 20px;
+  background: #F4F4F4;
+  margin: 40px auto;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px 0;
+  gap: 22px;
+}
+
+label {
+  color: #777;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+select,
+input,
+button {
+  width: 327px;
+  height: 48px;
+  color: #555;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #BBB;
+  background: #FFF;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  cursor: text;
+}
+
+button {
+  color: #FFF;
+  font-size: 18px;
+  border-radius: 5px;
+  background: #772FD3;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+button:active {
+  opacity: .6;
+}
+
+.box-bottom {
+  width: 327px;
+  height: 276px;
+  border-radius: 20px;
+  border: 1px solid #772FD3;
+}
+
+.box-currency {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 2px;
+}
+
+.currency {
+  color: #777;
+  font-size: 14px;
+}
+
+.currency-value {
+  color: #555;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.arrow-img {
+  padding: 7px 0;
+}
