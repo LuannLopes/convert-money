@@ -12,21 +12,22 @@ function convertValues() {
   const euroToday = 5.28;
 
   if (currencySelect.value == "dolar") {
-    const convertedValueDolar = inputCurrencyValue / dolarToday;
-    currencyValueToConvert.innerHTML = inputCurrencyValue;
     currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
-    }).format(convertedValueDolar);
+    }).format(inputCurrencyValue / dolarToday);
   }
   if (currencySelect.value == "euro") {
-    const convertedValueEuro = inputCurrencyValue / euroToday;
-    currencyValueToConvert.innerHTML = inputCurrencyValue;
-    currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+    currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
       style: "currency",
-      currency: "BRL",
-    }).format(convertedValueEuro);
+      currency: "EUR",
+    }).format(inputCurrencyValue / euroToday);
   }
+
+  currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(inputCurrencyValue);
 }
 
 convertButton.addEventListener("click", convertValues);
