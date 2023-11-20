@@ -8,6 +8,10 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background: linear-gradient(90deg, #383838 0%, #000000 81.25%);
 }
 
@@ -15,7 +19,6 @@ body {
   width: 375px;
   border-radius: 20px;
   background: #F4F4F4;
-  margin: 40px auto;
 }
 
 .container-main {
